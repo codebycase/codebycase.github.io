@@ -3,7 +3,7 @@ ul.toc {
   margin: 0;
   list-style-type: none;
   & > li {
-    margin: map-get($spacers, 1) 0;
+    margin: map-get($spacers, 0.5) 0;
     &.active {
       a {
         color: $text-color-3;
@@ -15,9 +15,9 @@ ul.toc {
 
   a {
     display: inline-block;
-    padding: map-get($spacers, 1) map-get($spacers, 2) map-get($spacers, 1) map-get($spacers, 2);
+    padding: map-get($spacers, 0.5) map-get($spacers, 1) map-get($spacers, 0.5) map-get($spacers, 1);
     text-decoration: none !important;
-    border-radius: map-get($base, border-radius);
+    border-radius: map-get($base, border-radius-sm);
     @include clickable($text-color, null, $text-color-3, $main-color-3);
   }
 

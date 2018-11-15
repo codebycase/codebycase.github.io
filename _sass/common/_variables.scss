@@ -9,7 +9,7 @@ $base: (
   font-size-lg:           1.25rem,
   font-size:              1rem,
   font-size-sm:           .875rem,
-  font-size-xs:           .8rem,
+  font-size-xs:           .75rem,
 
   font-size-h1-xl:        3.5rem,
   font-size-h2-xl:        2.5rem,
@@ -64,6 +64,7 @@ $base: (
 
 $spacers: (
   0:                      0,
+0.5:                      map-get($base, spacer) * .15,
   1:                      map-get($base, spacer) * .25,
   2:                      map-get($base, spacer) * .5,
   3:                      map-get($base, spacer),
@@ -82,9 +83,9 @@ $layout: (
   header-height:          4rem,
   header-height-sm:       3rem,
   content-max-width:      950px,
-  sidebar-width:          250px,
+  sidebar-width:          265px,
   sidebar-header-height:  3rem,
-  aside-width:            220px,
+  aside-width:            230px,
   footer-height:          10rem
 );
 
