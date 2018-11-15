@@ -111,6 +111,9 @@
     .toc-aside {
       padding: map-get($spacers, 5) 0 map-get($spacers, 3) map-get($spacers, 3);
     }
+    .toc-aside-fixed {
+      padding: 0 0 map-get($spacers, 3) map-get($spacers, 3);
+    }
   }
 
   .page__footer {

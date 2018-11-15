@@ -49,8 +49,8 @@
 
 .header__brand {
   & > svg {
-    width: map-get($base, font-size-h3) * 1.6;
-    height: map-get($base, font-size-h3) * 1.6;
+    width: map-get($base, font-size-h3) * 1.5;
+    height: map-get($base, font-size-h3) * 1.5;
     margin-right: map-get($spacers, 1);
     vertical-align: middle;
     @include media-breakpoint-down(md) {
@@ -62,7 +62,7 @@
     display: inline-block;
     vertical-align: middle;
     font-weight: bold;
-    font-family: map-get($base, font-family-code);
+    font-family: monospace;
     font-size: map-get($base, font-size-h3);
     @include media-breakpoint-down(md) {
       font-size: map-get($base, font-size-h3-small);
@@ -72,7 +72,7 @@
 
 .navigation {
   @include overflow(auto);
-  font-size: map-get($base, font-size) * 1.2;
+  font-size: map-get($base, font-size);
   & > ul {
     height: map-get($layout, header-height);
     padding-bottom: 0;

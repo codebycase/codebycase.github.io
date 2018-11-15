@@ -34,6 +34,7 @@
             left: 0,
             top: 0
           });
+          $root.children('.toc-aside').removeClass('toc-aside-fixed');
           curState = 'top';
         }
       }
@@ -43,6 +44,7 @@
             left: rootLeft + 'px',
             top: 0
           });
+          $root.children('.toc-aside').addClass('toc-aside-fixed');
           curState = 'fixed';
         }
       }
