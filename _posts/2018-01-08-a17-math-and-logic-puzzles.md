@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Math and Logic Puzzles
 key: a17-math-and-logic-puzzles
 categories: Algorithms
-tags: Math, Puzzle, Probability
+tags: Math Puzzle Probability
 ---
 
 ## Prime Numbers

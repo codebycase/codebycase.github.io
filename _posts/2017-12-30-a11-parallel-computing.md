@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Parallel Computing
 key: a11-parallel-computing
 categories: Algorithms
-tags: Parallelism, Concurrency
+tags: Parallelism Concurrency
 ---
 
 ## Parallel Computing

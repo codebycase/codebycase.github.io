@@ -3,7 +3,7 @@ layout: article
 title: Collection - Java Web App Notes
 key: c01-java-webapp-notes
 categories: Collections
-tags: Tomcat, WebApp
+tags: Tomcat WebApp
 ---
 
 ## Anti Cross-Site Scripting (XSS)

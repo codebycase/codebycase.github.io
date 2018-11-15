@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - SQL and Databases
 key: a15-sql-and-databases
 categories: Algorithms
-tags: SQL, Database
+tags: SQL Database
 ---
 
 ## Database Topics

@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Fundamentals
 key: a01-Fundamentals
 categories: Algorithms
-tags: Primitive, Bit-Manipulation, Charset-Encoding
+tags: Primitive Bit-Manipulation Charset-Encoding
 ---
 
 ## Complexity

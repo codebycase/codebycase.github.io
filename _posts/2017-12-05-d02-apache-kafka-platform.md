@@ -3,7 +3,7 @@ layout: article
 title: Designs - Apache Kafka Platform
 key: d02-apache-kafka-platform
 categories: Designs
-tags: Apache Kafka
+tags: Kafka
 ---
 
 ## What is Kafka?

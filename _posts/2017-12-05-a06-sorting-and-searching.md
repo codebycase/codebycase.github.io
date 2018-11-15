@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Sorting and Searching
 key: a06-sorting-and-searching
 categories: Algorithms
-tags: Sorting, Searching
+tags: Sorting Searching
 ---
 
 # Sorting

@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Dynamic Programming
 key: a08-dynamic-programming
 categories: Algorithms
-tags: Dynamic-Programming, Backtrack
+tags: Dynamic-Programming Backtrack
 ---
 
 # Dynamic Programming

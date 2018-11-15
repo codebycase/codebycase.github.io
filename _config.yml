@@ -35,18 +35,18 @@ timezone: America/New_York # see https://en.wikipedia.org/wiki/List_of_tz_databa
 ##############################
 author:
   type      : person # "person" (default), "organization"
-  name      : CodeByCase
-  url       :
-  avatar    : # path or url of avatar image
-  bio       : I am an amazing person.
-  email     : codebycase@gmail.com
-  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  name      : Liqun Chen
+  url       : https://www.linkedin.com/in/chenliqun/
+  avatar    : /assets/liqun-avatar.jpg
+  bio       : 15 years of extensive experience in all phases of the software development lifecycle. 
+  email     : lchenaction@gmail.com
+  facebook  : chenliqun # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name/
-  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name/
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  linkedin  : chenliqun # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name/
+  github    : tochenliqun # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
   telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
 

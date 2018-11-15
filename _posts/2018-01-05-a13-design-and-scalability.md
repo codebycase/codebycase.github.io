@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Design and Scalability
 key: a13-design-and-scalability
 categories: Algorithms
-tags: Design, Scalability
+tags: Design Scalability
 ---
 
 In an interview, when someone asks a system design question. You should have a conversation in which you demonstrate an ability to think creatively, understand design trade-offs, and attack unfamiliar problems. You should sketch key data structures and algorithms, as well as the technology stack (programming language, libraries, OS, hardware, and services) that you would use to solve the problem.

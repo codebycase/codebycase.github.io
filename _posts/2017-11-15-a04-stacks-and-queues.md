@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Stacks and Queues
 key: a04-stacks-and-queues
 categories: Algorithms
-tags: Stack, Queue
+tags: Stack Queue
 ---
 
 # Stacks & Queues

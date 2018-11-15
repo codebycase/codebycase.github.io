@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Arrays and Strings
 key: a02-arrays-and-strings
 categories: Algorithms
-tags: Array, String
+tags: Array String
 ---
 
 # Arrays and Strings

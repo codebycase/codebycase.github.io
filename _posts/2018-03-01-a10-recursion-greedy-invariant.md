@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Recursion, Greedy, Invariant
 key: a10-recursion-greedy-invariant
 categories: Algorithms
-tags: Recursion, Greedy, Invariants
+tags: Recursion Greedy Invariants
 ---
 
 ## Recursion

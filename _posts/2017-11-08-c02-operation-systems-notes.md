@@ -3,7 +3,7 @@ layout: article
 title: Collection - Operation Systems Notes
 key: c02-operation-systems-notes
 categories: Collections
-tags: Linux, Unix, macOS, Windows
+tags: Linux Unix macOS Windows
 ---
 
 # Linux/Unix

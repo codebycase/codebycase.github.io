@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Graphs, Trees and Heaps
 key: a05-graphs-trees-heaps
 categories: Algorithms
-tags: Graph, Tree, Heap
+tags: Graph Tree Heap
 ---
 
 # Graphs & Trees & Heaps
