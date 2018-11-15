@@ -110,7 +110,7 @@ The only operation you can perform is taking a single ring from the top of one p
 
 _Below shows the operations for 3 rings. One way to see the complexity is to "unwrap" the recurrence: $$T(n) = 1 + 2 + 4 + ... + 2^kT(n-k) = O(2^n)$$_
 
-![Towers Of Hanoi](/statics/images/algorithms/towers-of-hanoi.png)
+![Towers Of Hanoi](/assets/images/algorithms/towers-of-hanoi.png)
 
 This approach leads to a nature recursive algorithm. In each part, we are doing the following steps, outlined below with pseudocode:
 
@@ -816,7 +816,7 @@ Given n non-negative integers representing an elevation map where the width of e
 For example,
 Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
 
-![Rain Water Trap](/statics/images/algorithms/rain-water-trap.png)
+![Rain Water Trap](/assets/images/algorithms/rain-water-trap.png)
 
 _We can do it in one iteration using 2 pointers, maintain the leftMax and rightMax. Time complexity is O(n), space is O(1)._
 

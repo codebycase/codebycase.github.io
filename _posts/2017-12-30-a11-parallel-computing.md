@@ -67,14 +67,14 @@ public V put(K key, V value) {
 
 The following diagram illustrates the sketched situation. One thread running on the left CPU copies the shared object into its CPU cache, and changes its count variable to 2. This change is not visible to other threads running on the right CPU, because the update to count has not been flushed back to main memory yet.
 
-![Java Memory Model 1](/statics/images/algorithms/java-memory-model-6.png)
+![Java Memory Model 1](/assets/images/algorithms/java-memory-model-6.png)
 
 To solve this problem you can use Java's volatile keyword. The volatile keyword can make sure that a given variable is read directly from main memory, and always written back to main memory when updated.
 
 
 This diagram illustrates an occurrence of the problem with race conditions as described above:
 
-![Java Memory Model 2](/statics/images/algorithms/java-memory-model-7.png)
+![Java Memory Model 2](/assets/images/algorithms/java-memory-model-7.png)
 
 To solve this problem you can use a Java synchronized block. A synchronized block guarantees that only one thread can enter a given critical section of the code at any given time. Synchronized blocks also guarantee that all variables accessed inside the synchronized block will be read in from main memory, and when the thread exits the synchronized block, all updated variables will be flushed back to main memory again, regardless of whether the variable is declared volatile or not.
 

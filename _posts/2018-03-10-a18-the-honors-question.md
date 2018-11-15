@@ -375,7 +375,7 @@ The skyline in Figure B should be represented as:[ [2 10], [3 15], [7 12], [12 0
 
 Design an efficient algorithm for computing the skyline.
 
-![Draw Skyline 1](/statics/images/algorithms/draw-skyline1.jpg) | ![Draw Skyline 2](/statics/images/algorithms/draw-skyline2.jpg)
+![Draw Skyline 1](/assets/images/algorithms/draw-skyline1.jpg) | ![Draw Skyline 2](/assets/images/algorithms/draw-skyline2.jpg)
 
 Solution:
 
@@ -1761,7 +1761,7 @@ Huffman coding proceeds in three steps:
 3. Remove the children from `S` and add `u` to `S`. Repeat from Step 2 till `S` consists of a single node, which is the root.
 4. Mark all the left edges with 0 and the right edges with 1. The path from the root to a leaf node yields the bit string encoding the corresponding character.
 
-![Huffman Coding](/statics/images/algorithms/huffman-coding.gif)
+![Huffman Coding](/assets/images/algorithms/huffman-coding.gif)
 
 _It requires two extract-min and one insert operation, it takes O(nlogn) time to build the Huffman tree. It's possible for the tree to be very skewed. In such a situation, the codewords are of length 1, 2, 3,..., n, so the time to generate the codebook becomes O(1+2+..+n)=O(n^2)._
 

@@ -29,7 +29,7 @@ Cloud-native is more than architecting and optimizing to take advantage of the c
 
 - At the heart of any database is the transaction log. The transaction log is an append-only structure that records all the events (insert, update, and delete) that change the state of the data. The logs can be replayed to recreate the current state of the tables if need be. The database also manages indexes and materialized views, also caches query results, but they are all another copy of the data. Our objective is to take all this processing and **turn it inside out**, so that we can spread this processing across the cloud, to achieve massive scale and sufficient isolation. The message-driven (event streaming) is the externalized transaction log.
 
-![Anatomy of CNS](/statics/images/designs/anatomy-of-cloud-native-system.png)
+![Anatomy of CNS](/assets/images/designs/anatomy-of-cloud-native-system.png)
 
 - Event streaming is our message-driven, publish and subscribe mechanism for asynchronous inter-component communication. Event streams have a single responsibility, to receive and durably store events, lots of events, at massive scale. An event stream is an append-only, sharded database, that maintains an ordered log of events and scales horizontally to accommodate massive volumes. Each hand-off in the flow of events through the system is implemented transactionally by the smart endpoints (this is components) and their supporting architecture to achieve **eventual consistency**. The downstream components consume these events to trigger their behavior and cache pertinent information in materialized views. These materialized views make components responsive by providing a dedicated cache that is continuously warmed and available in local storage.
 
@@ -118,7 +118,7 @@ Cloud-native is more than architecting and optimizing to take advantage of the c
 
   It is important to distinguish between business rule violations and error handling. The Stream Circuit Breaker pattern is responsible for error handling, while the Saga pattern is responsible for business rule violations.
 
-  ![Saga Compensation Mediator](/statics/images/designs/saga-compensation-mediator.png)
+  ![Saga Compensation Mediator](/assets/images/designs/saga-compensation-mediator.png)
 
 ## Deployment
 
@@ -173,7 +173,7 @@ Shift deployments all the way to the left, and leverage **dark launches** to hel
 
   The following diagram provides an example of the various services involved in running an AWS Elastic Container Service (ESC) cluster.
 
-  ![Virtual Private Cloud](/statics/images/designs/virtual-private-cloud.png)
+  ![Virtual Private Cloud](/assets/images/designs/virtual-private-cloud.png)
 
 ## Testing
 
@@ -273,7 +273,7 @@ We will shift testing all the way to the left and weave it into the CI/CD pipeli
 
 - Defense in depth
 
-  ![Secure Different Layers](/statics/images/designs/secure-different-layers.png)
+  ![Secure Different Layers](/assets/images/designs/secure-different-layers.png)
 
   Edge layer: Cloud providers have vast and expansive capabilities spread around the globe. It is recommended to route all traffic, PUT, POST, DELETE, GET, and so forth, through **CDN**, to minimize the attack surface of a cloud-native system, like network level DDoS attack and encryption of data in transit. All traffic flowing through the CDN is filtered against the rule set of the **WAF** (Web Application Firewall), such as SQL injection, cross-site scripting, bad actors.
 
@@ -299,7 +299,7 @@ We will shift testing all the way to the left and weave it into the CI/CD pipeli
 
 - Application security
 
-  ![Secure Different Layers](/statics/images/designs/application-security.png)
+  ![Secure Different Layers](/assets/images/designs/application-security.png)
 
   Federated identity management supports: OAuth2.0, Open ID Connect and JSON Web Token (JWT).
 
@@ -329,7 +329,7 @@ We will shift testing all the way to the left and weave it into the CI/CD pipeli
 
 - Bi-directional synchronization and latching
 
-  ![Bi-directional Sync and Latching](/statics/images/designs/bi-directional-sync-latching.png)
+  ![Bi-directional Sync and Latching](/assets/images/designs/bi-directional-sync-latching.png)
 
   Lets walk through the scenario depicted in the preceding diagram for cloud-native C1 and C2:
 

@@ -386,7 +386,7 @@ _We can use a slow iterator by one and a fast iterator by two to traverse the li
 
 _x + y = k (slow); x + y + N = 2k (fast); => x = N - y = z_
 
-![UTF Character Encodings](/statics/images/algorithms/linked-list-cycle.png)
+![UTF Character Encodings](/assets/images/algorithms/linked-list-cycle.png)
 
 ```java
 public ListNode detectCycle(ListNode head) {      

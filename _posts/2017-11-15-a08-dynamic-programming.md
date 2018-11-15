@@ -742,7 +742,7 @@ _To calculate the subsequence slices, we can append a new element A[i] to existi
 
 _As the graph shows: For the forth element 3, if we append it to some arithmetic subsequences ending with 2, these subsequences must have a common difference of 3 - 2 = 1. Indeed there are two: [1, 2] and [1, 2]. So we can append 3 to the end of these subsequences, and the answer is added by 2. Similar to above, it can form new weak arithmetic subsequences [1, 3], [1, 3] and [2, 3]._
 
-![Maximal Square](/statics/images/algorithms/arithmetic-slices-subsequence.png)
+![Maximal Square](/assets/images/algorithms/arithmetic-slices-subsequence.png)
 
 ```java
 public int numberOfArithmeticSlicesII(int[] A) {
@@ -891,7 +891,7 @@ For example, given the following matrix:
 
 Return 4.
 
-![Maximal Square](/statics/images/algorithms/maximal-square.png)
+![Maximal Square](/assets/images/algorithms/maximal-square.png)
 
 > dp(i, j) = min(dp(i−1, j), dp(i−1, j−1), dp(i, j−1))+1.
 
@@ -1033,7 +1033,7 @@ public int numTrees(int n) {
 
 A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there?
 
-![Robot in Grid](/statics/images/algorithms/robot-in-grid.png)
+![Robot in Grid](/assets/images/algorithms/robot-in-grid.png)
 
 ```java
 public int findHowManyUniquePathsInGrid(int m, int n) {
@@ -2646,7 +2646,7 @@ Output: false
 
 _To implement this method, we'll make use of a 2-d boolean array dp. In this array dp[i][j] implies if it is possible to obtain a substring of length (i+j+2) which is a prefix of s3 by some interleaving of prefixes of strings s1 and s2 having lengths (i+1) and (j+1) respectively._
 
-![Interleave String](/statics/images/algorithms/interleaving-string.png)
+![Interleave String](/assets/images/algorithms/interleaving-string.png)
 
 ```java
 public boolean isInterleave(String s1, String s2, String s3) {

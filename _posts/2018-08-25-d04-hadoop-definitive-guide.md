@@ -35,7 +35,7 @@ Scaling         |Nonlinear                 |Linear
 
 ### A Weather MapReduce Sample
 
-![MapReduce Logical Data Flow](/statics/images/designs/mapreduce-logical-data-flow.png)
+![MapReduce Logical Data Flow](/assets/images/designs/mapreduce-logical-data-flow.png)
 
 When we run this job as below on a Hadoop cluster, we will package the code into a JAR file (which Hadoop will distribute around the cluster). Rather than explicitly specifying the name of the JAR file, we can pass a class in the Job’s setJarByClass() method, which Hadoop will use to locate the relevant JAR file by looking for the JAR file containing this class.
 
@@ -110,7 +110,7 @@ To minimize the data transferred between map and reduce tasks, Hadoop allows the
 
 `max(0, 20, 10, 25, 15) = max(max(0, 20, 10), max(25, 15)) = max(20, 25) = 25`
 
-![MapReduce Data Flow](/statics/images/designs/mapreduce-data-flow.png)
+![MapReduce Data Flow](/assets/images/designs/mapreduce-data-flow.png)
 
 ### Hadoop Distributed Filesystem
 
@@ -118,9 +118,9 @@ An HDFS cluster has two types of nodes operating in a master−worker pattern: a
 
 **Failover and fencing** The default implementation uses ZooKeeper to ensure that only one namenode is active. Each namenode runs a lightweight failover controller process to monitor for failures (using a simple heartbeating mechanism). If the active namenode fails, the standby can take over very quickly (in a few tens of seconds) because it has the latest state available in memory: both the latest edit log entries and an up-to-date block mapping. The range of fencing mechanisms includes revoking the namenode’s access to the shared storage directory (typically by using a vendor-specific NFS command), and disabling its network port via a remote management command.
 
-![Read Data from HDFS](/statics/images/designs/client-read-data-from-hdfs.png)
+![Read Data from HDFS](/assets/images/designs/client-read-data-from-hdfs.png)
 
-![Write Data to HDFS](/statics/images/designs/client-write-data-to-hdfs.png)
+![Write Data to HDFS](/assets/images/designs/client-write-data-to-hdfs.png)
 
 The client creates the file by calling create() on DistributedFileSystem, which makes an RPC call to the namenode to create a new file in the filesystem’s namespace, with no blocks associated with it (step 2). The namenode performs various checks to make sure the file doesn’t already exist and that the client has the right permissions to create the file. If these checks pass, the namenode makes a record of the new file; otherwise, file creation fails and the client is thrown an IOException. The DistributedFileSystem returns an FSDataOutputStream for the client to start writing data to.
 As the client writes data (step 3), the DFSOutputStream splits it into packets, which it writes to an internal queue called the data queue. The data queue is consumed by the DataStreamer, which is responsible for asking the namenode to allocate new blocks by picking a list of suitable datanodes to store the replicas. The list of datanodes forms a pipeline, and here we’ll assume the replication level is three, so there are three nodes in the pipeline. The DataStreamer streams the packets to the first datanode in the pipeline, which stores each packet and forwards it to the second datanode in the pipeline. Similarly, the second datanode stores the packet and forwards it to the third (and last) datanode in the pipeline (step 4).
@@ -152,7 +152,7 @@ The YARN scheduler to allocate resources to applications according to some defin
 
 - **File-Based Data Structure** Hadoop’s SequenceFile class provides a persistent data structure for binary key-value pairs. To use it as a logfile format, you would choose a key, such as timestamp represented by a LongWritable, and the value would be a Writable that represents the quantity being logged. A sequence file consists of a header followed by one or more records. A sync marker is written before the start of every block. The format of a block is a field indicating the number of records in the block, followed by four compressed fields: the key lengths, the keys, the value lengths, and the values. A MapFile is a sorted SequenceFile with an index to permit lookups by key. Avro datafiles use a schema to describe the objects stored, so it portable for different programming language.
 
-![Block Compression](/statics/images/designs/sequence-block-compression.png)
+![Block Compression](/assets/images/designs/sequence-block-compression.png)
 
 - **Column-Oriented Formats**
 
@@ -160,7 +160,7 @@ With row-oriented storage, the whole row is loaded into memory even though only 
 
 Column-oriented formats need more memory for reading and writing, since they have to buffer a row split in memory, rather than just a single row. So Column-oriented formats are not suited to streaming writes, as the current file cannot be recovered if the writer process fails.
 
-![Storage Format](/statics/images/designs/row-vs-column-oriented-storage.png)
+![Storage Format](/assets/images/designs/row-vs-column-oriented-storage.png)
 
 ## Part II: MapReduce
 
@@ -246,7 +246,7 @@ For more complex problems, it is worth considering a higher-level language than 
 
 In Oozie parlance, a workflow is a DAG of action nodes and control-flow nodes. Workflow definitions are written in XML using the Hadoop Process Definition Lan‐ guage, the specification for which can be found on the Oozie website.
 
-![Oozie Workflow](/statics/images/designs/oozie-workflow.png)
+![Oozie Workflow](/assets/images/designs/oozie-workflow.png)
 
 ### How MapReduce Works
 
@@ -258,7 +258,7 @@ You can run a MapReduce job with a single method call: submit() on a Job object 
 4. The MapReduce application master, which coordinates the tasks running the MapReduce job. The application master and the MapReduce tasks run in containers that are scheduled by the resource manager and managed by the node managers.
 5. This distributed filesystem (normally HDFS), which is use for sharing job files between the other entities.
 
-![MapReduce Job Run](/statics/images/designs/mapreduce-job-run.png)
+![MapReduce Job Run](/assets/images/designs/mapreduce-job-run.png)
 
 **Shuffle and Sort**
 
@@ -266,7 +266,7 @@ Each map task has a circular memory buffer that it writes the output to. The buf
 
 As each map tasks complete successfully, they notify their application master using the heartbeat mechanism. A thread in reducer periodically asks the master for map output hosts until it has retrieve them all, also merges the map outputs, maintaining their sort ordering.
 
-![Shuffle and Sort](/statics/images/designs/shuffle-sort-in-mapreduce.png)
+![Shuffle and Sort](/assets/images/designs/shuffle-sort-in-mapreduce.png)
 
 **Speculative Execution**
 
@@ -278,7 +278,7 @@ The OutputCommitter protocol ensure that jobs and tasks either succeed or fail c
 
 The logical records that FileInputFormats define ususally do not fit neatly into HDFS blocks. As shown below: A single file is broken into lines, and the line boundaries do not correspond with the HDFS block boundaries.
 
-![Splits and Blocks](/statics/images/designs/splits-blocks.png)
+![Splits and Blocks](/assets/images/designs/splits-blocks.png)
 
 Hadoop maintains some built-in counters for every job, and these report various metrics. MapReduce allows user code to define a set of counters, which are then incremented as desired in the mapper or reducer. Counters are defined by a Java enum, which serves to group related counters.
 
@@ -576,7 +576,7 @@ CREATE TABLE logs (ts BIGINT, line STRING) PARTITIONED BY (dt STRING, country ST
 CREATE TABLE bucketed_users (id INT, name STRING) CLUSTERED BY (id) INTO 4 BUCKETS;
 ```
 
-![Hive Architecture](/statics/images/designs/hive-architecture.png)
+![Hive Architecture](/assets/images/designs/hive-architecture.png)
 
 HDFS does not provide in-place file updates, so changes resulting from inserts, updates, and deletes are stored in small delta files. Delta files are periodically merged into the base table files by MapReduce jobs that are run in the background by the metastore.
 
@@ -612,7 +612,7 @@ sc.textFile(args(0))
 } }
 ```
 
-![Spark Runs a Job](/statics/images/designs/spark-runs-a-job.png)
+![Spark Runs a Job](/assets/images/designs/spark-runs-a-job.png)
 
 ### HBase
 

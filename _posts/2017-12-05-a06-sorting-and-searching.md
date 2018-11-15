@@ -241,7 +241,7 @@ public void dutchFlagPartion(int pivotIndex, List<Color> colors) {
 
 Key-indexed counting uses 11n + 4R + 1 array accesses to stably sort n items whose keys are integers between 0 and R - 1.
 
-![Key-Indexed Counting](/statics/images/algorithms/key-indexed-counting.png)
+![Key-Indexed Counting](/assets/images/algorithms/key-indexed-counting.png)
 
 ```java
 // Initialize the arrays, n + R + 1 array accesses
@@ -616,7 +616,7 @@ Using 3-way string quicksort, we can build a suffix array from a random string o
 
 With the improved suffix arrays, we can solve the suffix sorting and longest repeated substring problems in the linear time.
 
-![Suffix Array Sort](/statics/images/algorithms/suffix-sort-array.png)
+![Suffix Array Sort](/assets/images/algorithms/suffix-sort-array.png)
 
 Question: Compute the longest common substring that appears in two given strings.
 
@@ -1947,7 +1947,7 @@ public class TrieSET implements Iterable<String> {
 
 TSTs can help us avoid the excessive space cost associated with R-way tries. The number of links in a TST build from n string keys of average length w is between 3n and 3wn.
 
-![TST Trie](/statics/images/algorithms/tst-trie-representation.png)
+![TST Trie](/assets/images/algorithms/tst-trie-representation.png)
 
 Comparing with Hashing, TSTs only examine just enough key characters, supports ordered symbol table operations, plus the character-based operations: Prefix Match, Wildcard Match, and Longest Prefix. Bottom line is TSTs are faster than Hashing and more flexible than Red-Blank BSTs.
 

@@ -12,7 +12,10 @@
           {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
           {%- if site.title -%}
-            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
+            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">
+            	<!-- {{ site.title }} -->
+            	<span style="color: rgb(51, 204, 51);">Code</span><span style="color: rgb(102, 102, 102);">By</span><span style="color: rgb(204, 51, 102);">Case</span>
+            </a>
           {%- endif -%}
         </div>
         <button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button>

@@ -251,7 +251,7 @@ public class CommentWordCount {
 
 ### Bloom Filter Pattern
 
-![Bloom Filter](/statics/images/designs/bloom-filter.png)
+![Bloom Filter](/assets/images/designs/bloom-filter.png)
 
 An empty Bloom filter is a bit array of m bits, all set to 0. There must also be k different hash functions defined, each of which maps or hashes some set element to one of the m array positions, generating a uniform random distribution.
 
@@ -300,7 +300,7 @@ The popular microservice framework:
 
 Design a hash function for chess game states. Your function should take a state and the hash code for that state, and a move, and efficiently compute the hash code for the updated state.
 
-![Chess Positions & Moves](/statics/images/algorithms/chess-positions-moves.png)
+![Chess Positions & Moves](/assets/images/algorithms/chess-positions-moves.png)
 
 Solution:
 
@@ -655,7 +655,7 @@ Below battleship board reflects the sum of all the ship background probabilities
 
 $$B_i = \sum_{all ships} B_{i,\alpha}$$
 
-![Battleship Start](/statics/images/algorithms/battleship-start.png)
+![Battleship Start](/assets/images/algorithms/battleship-start.png)
 
 As a game unfolds, we learn a good deal of information about the board, so we need to incorporate this information into our theory of battleship. We call this info matrix $$I_{j,\beta}$$.
 
@@ -669,11 +669,11 @@ Also, we need to take weight into consideration, "the extra probability of there
 
 This is a picture of $$W_{i,C,33,M}$$, the extra probabilities for each square (i is all of them), of there being a carrier (alpha=C), given that we got a miss (beta=M) on square 33, (j=33).
 
-![Battleship Miss](/statics/images/algorithms/battleship-miss.png)
+![Battleship Miss](/assets/images/algorithms/battleship-miss.png)
 
 This is a picture of $$W_{i,S,65,H}$$, showing the extra probability of there being a submarine (alpha=S), at each square (i is all of them, since its a picture with 100 squares), given that we registered a hit (beta=H) on square 65 (j=65).
 
-![Battleship Hit](/statics/images/algorithms/battleship-hit.png)
+![Battleship Hit](/assets/images/algorithms/battleship-hit.png)
 
 # Reference Resources
 - [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a13_design_scalability)

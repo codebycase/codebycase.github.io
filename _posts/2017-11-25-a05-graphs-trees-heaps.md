@@ -533,9 +533,9 @@ While there exists an augmenting path:
 
 The shortest-augmenting-path implementation of the Ford-Fulkerson maxflow algorithm takes time proportional to EV(E+V) in the worst case. Bread-first search examines at most E edges and V vertices.
 
-![Increase Flow Along Augmenting Path](/statics/images/algorithms/increase-flow-path.png)
+![Increase Flow Along Augmenting Path](/assets/images/algorithms/increase-flow-path.png)
 
-![Flow Network](/statics/images/algorithms/flow-network.png)
+![Flow Network](/assets/images/algorithms/flow-network.png)
 
 ```java
 public class FordFulkerson {
@@ -835,7 +835,7 @@ public class FordFulkerson {
  - Add edge from each job to t (capacity 1).
  - Add edge from student to each job offered (infinity capacity).
 
-![Bipartite Matching](/statics/images/algorithms/bipartite-matching.png)
+![Bipartite Matching](/assets/images/algorithms/bipartite-matching.png)
 
 ```java
 public class BipartiteMatching {
@@ -1920,7 +1920,7 @@ A topological ordering of a directed acyclic graph (DAG): every edge goes from e
 
 DAGs can be used to represent compilation operations, dataflow programming, events and their influence, family tree, version control, compact sequence data, binary decision diagram etc.
 
-![Topological Ordering](/statics/images/algorithms/topological-ordering.png)
+![Topological Ordering](/assets/images/algorithms/topological-ordering.png)
 
 **Let us practice it with the Course Schedule problem:**
 
@@ -3327,7 +3327,7 @@ public class Codec {
 - Use a heap when all you care about is the K largest or smallest elements, and you do not need to support fast lookup, delete, or search operations for arbitrary elements.
 - **A heap is sometimes referred to as a priority queue.**
 
-![Heap Representations](/statics/images/algorithms/heap-representations.png)
+![Heap Representations](/assets/images/algorithms/heap-representations.png)
 
 ## Heaps Boot Camp
 
@@ -3533,7 +3533,7 @@ A priority queue is an abstract data type which is like a regular queue or stack
 
 A binary heap is a set of nodes with keys arranged in a complete heap-ordered binary tree, represented in level order in an array (not using the first entry). In a heap, the parent of the node in position k is in position k/2; and, conversely, the two children of the node in position k are in positions 2k and 2k + 1. We can travel up and down by doing simple arithmetic on array indices: to move up the tree from a[k] we set k to k/2; to move down the tree we set k to 2*k or 2*k+1.
 
-![Heap Operations](/statics/images/algorithms/heap-operations.png)
+![Heap Operations](/assets/images/algorithms/heap-operations.png)
 
 ```java
 public class PriorityQueue {
@@ -3899,7 +3899,7 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
 
 ### B-Trees Anatomy
 
-![B-Trees Anatomy](/statics/images/algorithms/b-trees-anatomy.png)
+![B-Trees Anatomy](/assets/images/algorithms/b-trees-anatomy.png)
 
 - In B-Trees, internal (non-leaf) nodes can have a variable number of child nodes within some pre-defined range. When data is inserted or removed from a node, its number of child nodes changes.
 
@@ -4586,7 +4586,7 @@ Segment Tree is basically a binary tree used for storing the intervals or segmen
 	tree[treeIndex] += (hi - lo + 1) * val;
 </pre>
 
-![Segment Tree](/statics/images/algorithms/segment-tree.jpg)
+![Segment Tree](/assets/images/algorithms/segment-tree.jpg)
 
 ```java
 public class SegmentTree {

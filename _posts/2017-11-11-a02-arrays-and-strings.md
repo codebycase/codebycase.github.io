@@ -967,7 +967,7 @@ private void reverse(int[] nums, int start, int end) {
 
 Sudoku is to fill a 9 x 9 grid with digits subject to the constraint that each column, each row, and each of the nine 3 x 3 sub-grids that compose the grid contains unique integers in [1, 9].
 
-![A Solved Sudoku](/statics/images/algorithms/a-solved-sudoku.png)
+![A Solved Sudoku](/assets/images/algorithms/a-solved-sudoku.png)
 
 _We can use recursive style with backtracking._
 
@@ -2031,7 +2031,7 @@ Key differences from brute-force implementation:
 - Text pointer i never decrements.
 - Could use input stream.
 
-![KMP-DFA](/statics/images/algorithms/kmp-dfa-construction.png)
+![KMP-DFA](/assets/images/algorithms/kmp-dfa-construction.png)
 
 ```java
 public class KMP {
@@ -2156,7 +2156,7 @@ To implement the mismatched character heuristic, we use an pre-computed array ri
 - Scan characters in pattern from right to left;
 - Can skip as many as M text chars when finding one not in the pattern.
 
-![Boyer-Moore](/statics/images/algorithms/boyer-moore-mismatch-heuristic.png)
+![Boyer-Moore](/assets/images/algorithms/boyer-moore-mismatch-heuristic.png)
 
 ```java
 public class BoyerMoore {
@@ -2272,7 +2272,7 @@ Module hash function covers: M-digit, base-R integer, and modulo Q.
 
 The Monte Carlo version of Rabin-Karp substring search is linear-time and extremely likely to be correct. If you also add a check() to check that the text matches the pattern, which turns into the Las Vegas version.
 
-![Rabin-Karp](/statics/images/algorithms/rabin-karp-hashing.png)
+![Rabin-Karp](/assets/images/algorithms/rabin-karp-hashing.png)
 
 ```java
 public class RabinKarp {
@@ -2396,7 +2396,7 @@ Nondeterministic finite-state automata (NFA) can "guess" the right one when face
   - For each of the N text characters, we iterate through a set of states of size no more than M and run DFS on the graph of ε-transitions.
   - Runs in time proportional to E + V.
 
-![Nondeterminism](/statics/images/algorithms/nondeterminism.png)
+![Nondeterminism](/assets/images/algorithms/nondeterminism.png)
 
 ```java
 public class NFA {
@@ -3121,7 +3121,7 @@ public class RunLength {
 
 ### Huffman Compression
 
-![Huffman Algorithm Demo](/statics/images/algorithms/huffman-algorithm-demo.png)
+![Huffman Algorithm Demo](/assets/images/algorithms/huffman-algorithm-demo.png)
 
 Huffman compression implementation:
 
@@ -3328,7 +3328,7 @@ Summary: Huffman does variable length code for fixed length symbols; LZW does fi
 
 Using prefix match code (Ternary Search Trie) to implements LZW compression: Encode everything in binary; Limit the number of elements in the symbol table; Initially dictionary has 512 elements (with 256 elements filled in for ASCII characters), transmit 9 bits per integer. When it is filled up, we double it to 1024 and start transmitting 10 bits per integer.
 
-![LZW Compression Demo](/statics/images/algorithms/lzw-compression-demo.png)
+![LZW Compression Demo](/assets/images/algorithms/lzw-compression-demo.png)
 
 LZW Compression:
 

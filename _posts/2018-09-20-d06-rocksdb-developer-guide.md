@@ -102,7 +102,7 @@ Extensions to the 'levelled' method to incorporate B+ tree structures have been 
 
 LSM trees are used in data stores such as Bigtable, HBase, LevelDB, MongoDB, SQLite4[5], Tarantool [6], RocksDB, WiredTiger,[7] Apache Cassandra, and InfluxDB.
 
-![LSM Tree](/statics/images/designs/lsm-leveldb.png)
+![LSM Tree](/assets/images/designs/lsm-leveldb.png)
 
 
 # Cassandra
@@ -362,9 +362,9 @@ cqlsh:my_keyspace> CREATE INDEX ON user ( phone_numbers );
 
 Let’s try the **query-first** approach to start designing the data model for our hotel application.
 
-![Hotel Application Queries](/statics/images/designs/hotel-application-queries.png)
+![Hotel Application Queries](/assets/images/designs/hotel-application-queries.png)
 
-![Hotel Lookup Model](/statics/images/designs/hotel-lookup-model.png)|![Hotel Reservation Model](/statics/images/designs/hotel-reservation-model.png)
+![Hotel Lookup Model](/assets/images/designs/hotel-lookup-model.png)|![Hotel Reservation Model](/assets/images/designs/hotel-reservation-model.png)
 
 **Hotel Keyspace**
 
@@ -509,7 +509,7 @@ Let’s try the **query-first** approach to start designing the data model for o
 
 ### Memtables, SSTables, and Commit Logs
 
-![Cassandra Node Data Structure](/statics/images/designs/cassandra-node-data-structure.png)
+![Cassandra Node Data Structure](/assets/images/designs/cassandra-node-data-structure.png)
 
 Cassandra stores data both in memory and on disk to provide both high performance and durability.
 

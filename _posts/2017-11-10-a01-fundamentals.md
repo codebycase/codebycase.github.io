@@ -57,7 +57,7 @@ public int codeThree(int n) {
 
 Specialized Algorithms vs. Linear Programming
 
-![Linear Programming](/statics/images/algorithms/linear-programming.png)
+![Linear Programming](/assets/images/algorithms/linear-programming.png)
 
 ## Primitive Types
 
@@ -240,7 +240,7 @@ There are three different Unicode character encodings: UTF-8, UTF-16 and UTF-32.
 - UTF-16 uses 2 bytes for any character in the BMP, and 4 bytes for supplementary characters.
 - UTF-32 uses 4 bytes for all characters.
 
-![UTF Character Encodings](/statics/images/algorithms/unicode-encodings.png)
+![UTF Character Encodings](/assets/images/algorithms/unicode-encodings.png)
 
 ```
 This is how the UTF-8 encoding would work:
@@ -445,7 +445,7 @@ The idea is based on the fact that all positive integers can be represented as s
 
 Design a binary indexed tree. also called Fenwick Tree.
 
-![BinaryIndexedTree](/statics/images/algorithms/binary-indexed-tree.png)
+![BinaryIndexedTree](/assets/images/algorithms/binary-indexed-tree.png)
 
 ```java
 public class BinaryIndexedTree {
@@ -1014,7 +1014,7 @@ public static int uniformRandom(int lowerBound, int upperBound) {
 
 This problem is concerned with rectangles whose sides are parallel to the X-axis and Y axis. Write a program which tests if two rectangles have a non empty intersection, return the rectangle formed by their intersection.
 
-![UTF Character Encodings](/statics/images/algorithms/rectangle-intersection.png)
+![UTF Character Encodings](/assets/images/algorithms/rectangle-intersection.png)
 
 ```java
 public class RectangleIntersection {

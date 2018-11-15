@@ -849,7 +849,7 @@ public class CircularQueue {
 
 ### Event-driven Simulation
 
-![Event Driven Simulation](/statics/images/algorithms/event-driven-simulation.png)
+![Event Driven Simulation](/assets/images/algorithms/event-driven-simulation.png)
 
 An event-driven simulation of n colliding particles requires at most n^2 priority queue operations for initialization, and at most n priority queue operations per collision (with one extra priority queue operation for each invalid collision)
 

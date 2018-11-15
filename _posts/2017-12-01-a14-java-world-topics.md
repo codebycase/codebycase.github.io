@@ -310,7 +310,7 @@ A simple Java application has the following GC roots:
 - The main thread  
 - Static variables of the main class  
 
-![GC Roots With Memory Leak](/statics/images/algorithms/gc-roots-with-memory-leak.png)
+![GC Roots With Memory Leak](/assets/images/algorithms/gc-roots-with-memory-leak.png)
 
 **Java Heap Memory**
 

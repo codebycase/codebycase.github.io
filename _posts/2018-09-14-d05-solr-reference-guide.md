@@ -199,11 +199,11 @@ In general, indexing is a batch, preprocessing stage, and retrieval is a quick o
 
 If you indexed your field with NumericField, you can efficiently search a particular range for that field using NumericRangeQuery. Under the hood, Lucene translates the requested range into the equivalent set of brackets in the indexed trie structure.
 
-![Trie Range Search](/statics/images/designs/trie-range-search.png)
+![Trie Range Search](/assets/images/designs/trie-range-search.png)
 
 Mongo DB's BTree Search
 
-![Index for Sort](/statics/images/designs/index-for-sort.svg)
+![Index for Sort](/assets/images/designs/index-for-sort.svg)
 
 
 ### Lucene Scoring

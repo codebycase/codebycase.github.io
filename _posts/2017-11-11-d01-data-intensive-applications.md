@@ -27,7 +27,7 @@ A data-intensive application is typically built from standard building blocks th
 - Send a message to another process, to be handled asynchronously (stream processing).
 - Periodically crunch a large amount of accumulated data (bath processing).
 
-![Data System Architecture](/statics/images/designs/data-system-architecture.png)
+![Data System Architecture](/assets/images/designs/data-system-architecture.png)
 
 We focus on three concerns that are important in most software systems: **Reliability**, **Scalability** and **Maintainability**.
 
@@ -83,7 +83,7 @@ In order to efficiently find the value for a particular key in the database, we 
 - Deleting a key and its associated value, you have to append a special deletion record to the data file (sometimes called a tombstone). The merging process will discard any previous values during merge.
 - Concurrency control, as writes are appended to the log in a strictly sequential order, a common implementation choice is to have only one write thread, or shard the log and synchronization is done via a per-shard mutex.
 
-![In-memory HashMap](/statics/images/designs/in-memory-hashmap.png)
+![In-memory HashMap](/assets/images/designs/in-memory-hashmap.png)
 
 _However, the hash table index must fit in memory and range queries are not efficient._
 
@@ -98,14 +98,14 @@ _However, the hash table index must fit in memory and range queries are not effi
 - There are also different strategies to determine the order and timeing of how SSTables are compacted and merged. The most common options are size-tiered compaction (newer and smaller SSTables are successively merged into older and larger SSTables); leveled compaction (The key range is split up into smaller SSTables and older data is moved into separate levels).
 - Full-text search and fuzzy indexes. In LevelDB, this in-memory index is a sparse collection of some of the keys, but in Lucene, the in-memory index is a **finite state automation** over the characters in the keys, similar to a trie. which supports efficient search for words within a given **edit distance**.
 
-![SSTable Index](/statics/images/designs/sstable-index.png)
+![SSTable Index](/assets/images/designs/sstable-index.png)
 
 **B-Trees**
 
 - The B-trees break the database down into fixed-size blocks or pages. Traditionally 4KB in size, and read or write one page at a time. Each page can be identified using an address or location, which allows one page to refer to another, and finally construct a tree of pages.
 - This algorithm ensures that the tree remains balanced: a B-tree with n keys always has a depth of O(logn). A four-level tree of 4KB pages with a branching factor of 500 can store up to 256TB.
 
-![B-tree Index](/statics/images/designs/b-tree-index.png)
+![B-tree Index](/assets/images/designs/b-tree-index.png)
 
 **Multi-column Indexes**
 
@@ -145,7 +145,7 @@ The equivalent JSON representation of that schema is:
 
 Looking at the following example data record encoded using Avro. To parse the binary data, you go through the fields in the order that they appear in the schema and use the schema to tell you the data type of each fields.
 
-![Encoded Using Avro](/statics/images/designs/encoded-using-avro.png)
+![Encoded Using Avro](/assets/images/designs/encoded-using-avro.png)
 
 _The key idea with Avro is that the writer's schema and the reader's schema don't have to be the same--they only need to be compatible. When data is decoded (read), the Avro library resolves the differences by looking at the writer's schema and the reader's schema side by side and translating the data from the writer's schema into the reader's schema._
 
@@ -161,7 +161,7 @@ This algorithm ensures that no data is silently dropped, but the clients have to
 
 **With multiple replica, we need to use a version number per replica as well as per key.**
 
-![Edit Shopping Cart](/statics/images/designs/editing-shopping-cart.png)
+![Edit Shopping Cart](/assets/images/designs/editing-shopping-cart.png)
 
 _Please note the step 4: client2 received the two values [milk] and [eggs] from the server in the last response (version:2), so client2 now merges those values and adds ham to form a new value [eggs, milk, ham]. It sends that value to the server, along with the previous version number 2. The server detects that version 2 overwrites [eggs] but is concurrent with [milk, flour] which is version 3. so return all values with version 4._
 
@@ -181,7 +181,7 @@ In this approach, partitions are typically rebalanced dynamically by splitting t
 
 Where a hash function is applied to each key, and a partition owns a range of hashes. This method destroys the ordering of keys, making range queries inefficient, but may distribute load more evenly. (The MD5 hash function generates 128 bits, which gives 32 characters if encode it as hexadecimal). The following chart uses the first 2 bytes of MD5 hash, which covers a total of 2^16 = 65536 partitions.
 
-![Partition by Hash Key](/statics/images/designs/partition-by-hash-key.png)
+![Partition by Hash Key](/assets/images/designs/partition-by-hash-key.png)
 
 **Compound Primary Key**
 
@@ -191,7 +191,7 @@ The concatenated index approach enables an elegant data model for one-to-many re
 
 _As below chart shows, the primary key consists of partition key and sort key._
 
-![Composite Primary Key](/statics/images/designs/composite-primary-key.png)
+![Composite Primary Key](/assets/images/designs/composite-primary-key.png)
 
 **Skewed Workloads and Relieving Hot Spots**
 
@@ -208,7 +208,7 @@ A secondary index also needs to be partitioned, and there are two methods:
 - Document-partitioned indexes (local indexes), where the secondary indexes are stored in the same partition as the primary key and value. This means that only a single partition needs to updated on write, but a read of the secondary index requires a scatter/gather across all partitions.
 - Term-partitioned indexes (global indexes), where the secondary indexes are partitioned separately, using the indexes values. An entry in the secondary index may include records from all partitions of the primary key. When a document is written, several partitions of the secondary index need to be updated; however, a read can be served from a single partitions
 
-![Partition Secondary Index](/statics/images/designs/partition-secondary-index-by-term.png)
+![Partition Secondary Index](/assets/images/designs/partition-secondary-index-by-term.png)
 
 **Strategies for Rebalancing**
 
@@ -218,17 +218,17 @@ We need an approach that doesn't move data around more that necessary, **Fixed n
 
 Now, if a node is added to the cluster, the new node can steal a few partitions from every existing node until partitions are fairly distributed once again. The key range partitioned databases such as HBase and RethinkDB create partitions dynamically. When a partition grows to exceed a configured size (10GB), it is split into two partitions.
 
-![Add New Node to Cluster](/statics/images/designs/adding-new-node-to-cluster.png)
+![Add New Node to Cluster](/assets/images/designs/adding-new-node-to-cluster.png)
 
 **Request Routing**
 
 There are three different ways of routing a request to the right node. (service discovery).
 
-![Add New Node to Cluster](/statics/images/designs/three-ways-of-routing-request.png)
+![Add New Node to Cluster](/assets/images/designs/three-ways-of-routing-request.png)
 
 Many distributed data systems rely on a separate coordination service such as ZooKeeper to keep track of this cluster metadata. Each node register itself in ZooKeeper, and ZooKeeper maintains the authoritative mapping of partitions to nodes. Other actors, such as the routing tier or the partitioning-aware client, can subscribe to this information in ZooKeeper. Whenever a partition changes ownership, or a node is added or removed, ZooKeeper notifies the routing tier so that it can keep its routing information up to date.
 
-![Add New Node to Cluster](/statics/images/designs/zookeeper-track-nodes.png)
+![Add New Node to Cluster](/assets/images/designs/zookeeper-track-nodes.png)
 
 _Key -> MD5(Key) -> First 2 Bytes -> Lookup Partition ID -> Get Node ID -> Get IP Address_
 
@@ -270,7 +270,7 @@ Like read committed isolation, implementations of snapshot isolation typically u
 
 To implement snapshot isolation, the database must potentially keep several different committed versions of an object, because various in-progress transactions may need to see the state of the database at different points in time. Because it maintains several versions of an object side by side, this technique is known as multi-version concurrency control (MVCC).
 
-![Snapshot Isolation MVCC](/statics/images/designs/snapshot-isolation-mvcc.png)
+![Snapshot Isolation MVCC](/assets/images/designs/snapshot-isolation-mvcc.png)
 
 An update is internally translated into a delete and a create. At some later time, when it is certain that no transaction can any longer access the deleted data, a garbage collection process in the database removes any rows marked for deletion and frees their space.
 
@@ -346,13 +346,13 @@ Optimistic concurrency control techniques tend to perform better than pessimisti
 
 Also, why wait until committing? This can avoid unnecessary aborts, SSI preserves snapshot isolation's support for long-running reads from a consistent snapshot.
 
-![Detecting Writes Affects Reads](/statics/images/designs/detecting-reads-outdate-values.png)
+![Detecting Writes Affects Reads](/assets/images/designs/detecting-reads-outdate-values.png)
 
 - Detecting writes that affect prior reads
 
 The second case to consider is when another transaction modifies data after it has been read.
 
-![Detecting Writes Affects Reads](/statics/images/designs/detecting-writes-affect-reads.png)
+![Detecting Writes Affects Reads](/assets/images/designs/detecting-writes-affect-reads.png)
 
 Compare to two-phase locking, the big advantage of serializable snapshot isolation is that one transaction doesn't need to block waiting for locks held by another transaction. Like under snapshot isolation, writers don't block readers, and vice versa. This design principal makes query latency much more predictable and less variable. In particular, read-only queries can run on a consistent snapshot without requiring any locks, which is very appealing for read-heavy workloads.
 
@@ -413,7 +413,7 @@ When using a lock or lease to protect access to some resource, we need to ensure
 
 If ZooKeeper is used as lock service, the transaction ID zxid or the node version cversion can be used as fencing token. For server resources that do not explicitly support fencing tokens, you can include the fencing token in the file name.
 
-![Increasing Fencing Token](/statics/images/designs/increasing-fencing-tokens.png)
+![Increasing Fencing Token](/assets/images/designs/increasing-fencing-tokens.png)
 
 ## C09 Consistency and Consensus
 
@@ -427,7 +427,7 @@ Linearizability is useful in a few areas:
 - Constraints and uniqueness guarantees
 - Cross-channel timing dependencies (image resizer sample)
 
-![Image Resizer Queue](/statics/images/designs/image-resizer-queue.png)
+![Image Resizer Queue](/assets/images/designs/image-resizer-queue.png)
 
 **Ordering Guarantees**
 
@@ -441,7 +441,7 @@ But with a multi-leader or leader-less database, or the database is partitioned.
 
 The Lamport timestamp is then simply a pair of (counter, node ID).
 
-![Image Resizer Queue](/statics/images/designs/lamport-timestamps.png)
+![Image Resizer Queue](/assets/images/designs/lamport-timestamps.png)
 
 
 **Total Order Broadcast**
@@ -468,7 +468,7 @@ Two-phase commit is an algorithm for achieving atomic transaction commit across 
 
 A 2PC transaction begins with the application reading and writing data on multiple database nodes (also called participants). When the application is ready to commit, the coordinator begins phase 1: it sends a prepare request to each of the nodes, asking them whether they are able to commit. The coordinator then tracks the responses from the participants and decides to send out a commit or abort request.
 
-![Two-Phase Commit](/statics/images/designs/two-phase-commit.png)
+![Two-Phase Commit](/assets/images/designs/two-phase-commit.png)
 
 To understand why it works, let's break down the process:
 
@@ -535,13 +535,13 @@ To create a MapReduce job, you need to implement two callback functions, the map
 
 - **Reducer**: The MapReduce framework takes the key-value pairs produced by the mappers, collects all the values belonging to the same key, and calls the reducer with an iterator over that collection of values. The reducer can produce output records.
 
-![MapReduce Job Execution](/statics/images/designs/mapreduce-job-execution.png)
+![MapReduce Job Execution](/assets/images/designs/mapreduce-job-execution.png)
 
 **Reduce-Side Joins and Grouping**
 
 When the MapReduce framework partitions the mapper output by key and then sorts the key-value pairs, the effect is that all the activity events and the user record with the same user ID become adjacent to each other in the reducer input. The Map-Reduce Job can even array the records to be sorted such that the reducer always sees the record from the user database first, followed by the activity events in timestamp order, this technique is know as a secondary sort.
 
-![MapReduce Job Execution](/statics/images/designs/a-reduce-side-sort-merge-joins.png)
+![MapReduce Job Execution](/assets/images/designs/a-reduce-side-sort-merge-joins.png)
 
 If a join input has hot keys, there are a few algorithms you can use to compensate.
 
@@ -601,7 +601,7 @@ Message broker is essentially a kind of database that is optimized for handling 
 
 When multiple consumers read messages in the same topic, two main patterns of messages are used: Load balancing and Fan-out. They can also be **combined**: for example, two separate groups of consumers may each subscribe to a topic, such that each group collectively receives all messages, but within each group only one of the nodes receives each messages.
 
-![Load balancing & Fan-out](/statics/images/designs/load-balancing-fan-out.png)
+![Load balancing & Fan-out](/assets/images/designs/load-balancing-fan-out.png)
 
 **Partitioned logs for message storage**
 
@@ -611,7 +611,7 @@ Within each partition, the broker assigns a monotonically increasing sequence nu
 
 To reclaim disk space, the log is actually divided into segments, and from time to time old segments are deleted or moved to archive storage. Effectively, the log implements a bounded-size buffer that discards old messages when it gets full, also know as a circular buffer or **ring buffer**.
 
-![Topic-partition file](/statics/images/designs/topic-partition-file.png)
+![Topic-partition file](/assets/images/designs/topic-partition-file.png)
 
 _In situations where messages may be expensive to process and you want to parallelize processing on a message-by-message basis, and where message ordering is not so important, the JMS/AMQP style of message broker is preferable. On the other hand, in situations with high message throughput, where each message is fast to process and where message ordering is important, the log-based approach works very well._
 
@@ -622,7 +622,7 @@ Change Data Capture (CDC) is the process of observing all data changes written t
 
 For example, you can capture the changes in a database and continually apply the same changes to a search index. If the log of changes is applied in the same order, you can expect the data in the search index to match the data in the database. The search index and any other derived data systems are just consumers of the change stream.
 
-![Topic-partition file](/statics/images/designs/change-data-capture.png)
+![Topic-partition file](/assets/images/designs/change-data-capture.png)
 
 _Kafka Connect is an effort to integrate change data capture tools for a wide range of database systems with Kafka. Once the stream of change events is in Kafka, it can be used to update derived data systems. Kafka Connect sinks can export data from Kafka to various different databases and indexes._
 
@@ -636,7 +636,7 @@ Several purposes of stream processing, including searching for event patterns (c
 
 Stream processors often need to deal with time. Confusing event time and processing time leads to bad data. For example, say you have a stream processor that measures the rate of requests. If you redeploy the stream processor, it may be shut down for a minute and process the backlog of events when it comes back up. If you measure the rate based on the processing time, it will look as if there was a sudden anomalous spike of requests while processing the backlog.
 
-![Windowing by Processing Time](/statics/images/designs/windowing-by-processing-time.png)
+![Windowing by Processing Time](/assets/images/designs/windowing-by-processing-time.png)
 
 Whose clock are we using?
 

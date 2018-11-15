@@ -215,15 +215,15 @@ Spatial data has two fundamental query types: nearest neighbors and range querie
 
 Let's see how to build a R-tree. we start with a bunch of input points and sort them into 9 rectangular boxes with about the same number of points in each. We’ll repeat the same process a few more times until the final boxes contain 9 points at most. Besides points, R-tree can contain rectangles, which can in turn represent any kinds of geometric objects. It can also extend to 3 or more dimensions.
 
-![Anatomy of CNS](/statics/images/algorithms/R-tree-spatial-data-structure.png)
+![Anatomy of CNS](/assets/images/algorithms/R-tree-spatial-data-structure.png)
 
 Each node has a fixed number of children (in our R-tree example, 9). How deep is the resulting tree? For one million points, the tree height will equal ceil(log(1000000) / log(9)) = 7. When performing a **range search** on such a tree, we can start from the top tree level and drill down, ignoring all the boxes that don’t intersect our query box. For a small query box, this means discarding all but a few boxes at each level of the tree. So getting the results won’t need much more than sixty box comparisons (7 * 9 = 63) instead of a million. Making it ~16000 times faster than a naive loop search in this case. So the time complexity is O(Klog(N)) where K is the number of results.
 
-![Anatomy of CNS](/statics/images/algorithms/R-tree-range-query.png)
+![Anatomy of CNS](/assets/images/algorithms/R-tree-range-query.png)
 
 To search a spatial tree for **nearest neighbors**, we’ll take advantage of another neat data structure — a priority queue. It allows keeping an ordered list of items with a very fast way to pull out the “smallest” one. We start our search at the top level by arranging the biggest boxes into a queue in the order from nearest to farthest. Next, we “open” the nearest box, removing it from the queue and putting all its children (smaller boxes) back into the queue alongside the bigger ones. We go on like that, opening the nearest box each time and putting its children back into the queue. When the nearest item removed from the queue is an actual point, it’s guaranteed to be the nearest point. The second point from the top of the queue will be second nearest, and so on.
 
-![Anatomy of CNS](/statics/images/algorithms/R-tree-priority-queue.png)
+![Anatomy of CNS](/assets/images/algorithms/R-tree-priority-queue.png)
 
 # Reference Resources
 - [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a015_sql_databases)

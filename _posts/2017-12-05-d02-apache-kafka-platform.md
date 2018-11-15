@@ -864,7 +864,7 @@ Partitions sometimes are reassigned to a different consumer. When this happens, 
 
 This type of multiphase processing is very familiar to those who write map-reduce code, where you often have to resort to multiple reduce phases. Unlike MapReduce, most stream-processing frameworks allow including all steps in a single app, with the framework handling the details of which application instance (or worker) will run reach step.
 
-![Multiphase Processing](/statics/images/designs/multiphase-processing.png)
+![Multiphase Processing](/assets/images/designs/multiphase-processing.png)
 
 **Processing with External Lookup: Stream-Table Join**
 
@@ -878,7 +878,7 @@ When you join two streams, you are joining the entire history, trying to match e
 
 For example, let’s say that we have one stream with search queries that people entered into our website and another stream with clicks, which include clicks on search results. We want to match search queries with the results they clicked on so that we will know which result is most popular for which query. Obviously we want to match results based on the search term but only match them within a certain time-window.
 
-![Join Two Streams](/statics/images/designs/join-two-streams.png)
+![Join Two Streams](/assets/images/designs/join-two-streams.png)
 
 The way this works in Kafka Streams is that both streams, queries and clicks, are partitioned on the same keys, which are also the join keys. This way, all the click events from user_id:42 end up in partition 5 of the clicks topic, and all the search events for user_id:42 end up in partition 5 of the search topic. Kafka Streams then makes sure that partition 5 of both topics is assigned to the same task. So this task sees all the relevant events for user_id:42. It maintains the join-window for both topics in its embedded RocksDB cache, and this is how it can perform the join.
 
@@ -1041,7 +1041,7 @@ If we need to require results from multiple partitions, like join two streams. K
 
 Another example of dependencies between tasks is when our application requires repartitioning, So if the application fails and needs to restart, it can look up its last position in the stream from Kafka and continue its processing from the last offset it committed before failing; If the local state store is lost, the streams application can always re-create it from the change log it stores in Kafka; If a task failed but there are threads or other instances of the streams application that are active, the task will restart on one of the available threads.
 
-![Two Tasks with Re-partitioning](/statics/images/designs/two-tasks-repartition.png)
+![Two Tasks with Re-partitioning](/assets/images/designs/two-tasks-repartition.png)
 
 
 
