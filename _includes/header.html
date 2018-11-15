@@ -23,6 +23,7 @@
       {%- if site.data.navigation.header -%}
       <nav class="navigation">
         <ul>
+          <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>        
           {%- for _item in site.data.navigation.header -%}
             {%- include snippets/get-nav-url.html path=_item.url -%}
             {%- assign _nav_url = __return -%}
@@ -35,9 +36,27 @@
               <li class="navigation__link"><a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
             {%- endif -%}
           {%- endfor -%}
-          <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
         </ul>
       </nav>
       {%- endif -%}
+      <div class="header__avatar">
+	      {%- if page.author -%}
+	        {%- assign _author = site.data.authors[page.author] -%}
+	      {%- else -%}
+	        {%- assign _author = site.author -%}
+	      {%- endif -%}
+         
+		  {%- if _author.avatar -%}
+		    {%- if _author.url -%}
+		    <a href="{{ _author.url }}" class="item__image" target="_blank">
+		    {%- endif -%}
+		      {%- include snippets/get-nav-url.html path=_author.avatar -%}
+		      {%- assign _author_avatar = __return -%}
+		      <img class="author-profile__avatar" itemprop="image" src="{{ _author_avatar }}" />
+		    {%- if _author.url -%}
+		    </a>
+		    {%- endif -%}
+		  {%- endif -%}      
+      </div>
     </div>
   </header>

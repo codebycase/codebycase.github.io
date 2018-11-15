@@ -70,6 +70,13 @@
   }
 }
 
+.header__avatar {
+  .author-profile__avatar {
+  	width: map-get($layout, header-height-sm);
+  	margin-left: map-get($base, spacer);
+  }
+}
+
 .navigation {
   @include overflow(auto);
   font-size: map-get($base, font-size);
