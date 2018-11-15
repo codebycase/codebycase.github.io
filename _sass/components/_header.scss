@@ -72,6 +72,7 @@
 
 .navigation {
   @include overflow(auto);
+  font-size: map-get($base, font-size) * 1.2;
   & > ul {
     height: map-get($layout, header-height);
     padding-bottom: 0;
