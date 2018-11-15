@@ -62,7 +62,7 @@
     display: inline-block;
     vertical-align: middle;
     font-weight: bold;
-    font-family: monospace;
+    font-family: map-get($base, font-family-code);
     font-size: map-get($base, font-size-h3);
     @include media-breakpoint-down(md) {
       font-size: map-get($base, font-size-h3-small);
