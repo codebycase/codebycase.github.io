@@ -120,7 +120,7 @@ comments:
 
   ## Disqus
   disqus:
-    shortname: codebycase # the Disqus shortname for the site
+    shortname: CodeByCase # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
