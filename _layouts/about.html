@@ -1,0 +1,27 @@
+---
+layout: page
+titles:
+  en: About
+  zh: 关于
+  zh-Hans: 关于
+  zh-Hant: 關於
+---
+
+{{ content }}
+
+<div class="layout--about js-all">
+  <div class="js-result layout--about__result d-none">
+      {%- if page.author -%}
+        {%- assign _author = site.data.authors[page.author] -%}
+      {%- else -%}
+        {%- assign _author = site.author -%}
+      {%- endif -%}
+      {%- include article-footer/author-profile.html author=_author -%}
+  </div>
+</div>
+
+<script>
+  {%- include scripts/archieve.js -%}
+</script>
+
+
