@@ -126,11 +126,9 @@ comments:
   gitalk:
     clientID    : 4795af18f9129677a7ce # GitHub Application Client ID
     clientSecret: b0ce8e82aa070f5c901e08c0ec88504cc00e530e # GitHub Application Client Secret
-    repository  : https://github.com/codebycase/codebycase.github.io.git # GitHub repo
+    repository  : codebycase.github.io # GitHub repo
     owner       : codebycase # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      - codebycase # - your GitHub Id
-      - tochenliqun # - your GitHub Id
+    admin       : [codebycase, tochenliqun] # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
 
 
 ## => Pageview
