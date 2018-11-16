@@ -1,5 +1,21 @@
 header:
   - titles:
+      en:       Coding
+      zh:       编程
+    url:        /coding.html
+  - titles:
+      en:       Algorithm
+      zh:       算法
+    url:        /algorithm.html
+  - titles:
+      en:       Big Data
+      zh:       大数据
+    url:        /bigdata.html
+  - titles:
+      en:       Architect
+      zh:       架构
+    url:        /architect.html
+  - titles:
       en:       Archive
       zh:       归档
       zh-Hans:  归档
