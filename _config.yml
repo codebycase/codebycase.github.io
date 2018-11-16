@@ -22,8 +22,7 @@ url     : "https://www.codebycase.com" # the base hostname & protocol for your s
 baseurl : '/' # does not include hostname
 title   : CodeByCase
 description: > # this means to ignore newlines until "Language & timezone"
-  CodeByCase | 深耕代码
-
+  CodeByCase | 深耕代码 (Algorithm, Big Data, Design, Java)
 
 ## => Language and Timezone
 ##############################
@@ -116,7 +115,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: disqus # false (default), "disqus", "gitalk", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "custom"
 
   ## Disqus
   disqus:
@@ -125,12 +124,13 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : 4795af18f9129677a7ce # GitHub Application Client ID
+    clientSecret: b0ce8e82aa070f5c901e08c0ec88504cc00e530e # GitHub Application Client Secret
+    repository  : https://github.com/codebycase/codebycase.github.io.git # GitHub repo
+    owner       : codebycase # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+      - codebycase # - your GitHub Id
+      - tochenliqun # - your GitHub Id
 
 
 ## => Pageview
