@@ -8,7 +8,7 @@ header:
       zh:       算法
     url:        /algorithm.html
   - titles:
-      en:       Big Data
+      en:       BigData
       zh:       大数据
     url:        /bigdata.html
   - titles:
