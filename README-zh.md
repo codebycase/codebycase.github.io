@@ -1,6 +1,6 @@
 # [CodeByCase](https://github.com/codebycase/codebycase.github.io)
 
-**CodeByCase \| 深耕代码 (Java, Algorithm, Big Data, Architect)**
+**CodeByCase \| 深耕代码 (Coding, Algorithm, Big Data, Architect)**
 
 Share well-crafted code, concepts and solutions, grasp the essential elements of programming! :+1:
 
