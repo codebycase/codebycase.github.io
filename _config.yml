@@ -35,7 +35,7 @@ timezone: America/New_York # see https://en.wikipedia.org/wiki/List_of_tz_databa
 author:
   type      : person # "person" (default), "organization"
   name      : Liqun Chen
-  url       : https://www.linkedin.com/in/chenliqun/
+  url       : /about.html
   avatar    : /assets/liqun-avatar.jpg
   bio       : 15 years of extensive experience in all phases of the software development lifecycle. 
   email     : lchenaction@gmail.com
