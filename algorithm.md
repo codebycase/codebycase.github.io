@@ -6,7 +6,7 @@ key: page-algorithm
 
 ## Algorithms (Java)
 
-Conclude and sum up various programming questions & solutions. Let's brush up ourselves in a fun and efficient way!
+Conclude and sum up various algorithm questions & solutions. Let's brush up ourselves in a fun and efficient way!
 
 ### Table of Contents
  - [Chapter 01. Fundamentals](/algorithms/2017/11/10/a01-fundamentals.html "Primitive, Bit Manipulation")
@@ -23,7 +23,7 @@ Conclude and sum up various programming questions & solutions. Let's brush up ou
  - [Chapter 13. Design and Scalability](/algorithms/2018/01/05/a13-design-and-scalability.html)
  - [Chapter 14. Java World Topics](/algorithms/2017/12/01/a14-java-world-topics.html "JVM, Effective Java")
  - [Chapter 15. SQL and Databases](/algorithms/2017/12/20/a15-sql-and-databases.html "RDBMS, Transaction")
- - [Chapter 16. NoSQL and BigData](/designs/2017/11/11/d01-data-intensive-applications.html "MapReduce, Hadoop")
+ - [Chapter 16. NoSQL and Big Data](/designs/2017/11/11/d01-data-intensive-applications.html "MapReduce, Hadoop")
  - [Chapter 17. Math and Logic Puzzles](/algorithms/2018/01/08/a17-math-and-logic-puzzles.html "Brainteaser, Probability")
  - [Chapter 18. The Honors Question](/algorithms/2018/03/10/a18-the-honors-question.html "Challenging, Intractability")
  - [Chapter 19. Tricky Java Snippets](/algorithms/2018/05/18/a19-tricky-java-snippets.html)
