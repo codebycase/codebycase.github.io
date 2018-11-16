@@ -22,7 +22,7 @@ url     : "https://www.codebycase.com" # the base hostname & protocol for your s
 baseurl : '/' # does not include hostname
 title   : CodeByCase
 description: > # this means to ignore newlines until "Language & timezone"
-  CodeByCase | 深耕代码 (Algorithm, Big Data, Design, Java)
+  CodeByCase | 深耕代码 (Java, Algorithm, Big Data, Architect)
 
 ## => Language and Timezone
 ##############################
@@ -115,7 +115,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: gitalk # false (default), "disqus", "gitalk", "custom"
+  provider: disqus # false (default), "disqus", "gitalk", "custom"
 
   ## Disqus
   disqus:
