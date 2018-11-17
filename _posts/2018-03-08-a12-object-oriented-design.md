@@ -81,4 +81,4 @@ abstract protected Room makeRoom();
 - Many libraries take advantage of design patterns in their implementations: sorting and searching algorithms use the template method pattern, custom comparison functions illustrate the strategy pattern. typed-I/O shows off the decorator pattern, etc.
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a12_object_oriented_design)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a12_object_oriented_design)

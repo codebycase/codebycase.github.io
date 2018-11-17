@@ -1252,4 +1252,4 @@ public boolean canCross2(int[] stones) {
 
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a10_recursion_greedy_invariant)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a10_recursion_greedy_invariant)

@@ -226,4 +226,4 @@ To search a spatial tree for **nearest neighbors**, we’ll take advantage of an
 ![Anatomy of CNS](/assets/images/algorithms/R-tree-priority-queue.png)
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a015_sql_databases)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a015_sql_databases)

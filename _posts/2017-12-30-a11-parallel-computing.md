@@ -1060,4 +1060,4 @@ public static void main(String[] args) throws Exception {
 ```
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a11_parallel_computing)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a11_parallel_computing)

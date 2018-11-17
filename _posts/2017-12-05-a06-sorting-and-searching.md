@@ -3123,4 +3123,4 @@ public int findElementAppearsOnce(int[] nums) {
 ```
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a04_sorting_searching)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a04_sorting_searching)

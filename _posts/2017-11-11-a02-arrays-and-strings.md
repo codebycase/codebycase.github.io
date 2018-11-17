@@ -3410,4 +3410,4 @@ public class LZW {
 
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a02_arrays_strings)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a02_arrays_strings)

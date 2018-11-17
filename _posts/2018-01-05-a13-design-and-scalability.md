@@ -676,7 +676,7 @@ This is a picture of $$W_{i,S,65,H}$$, showing the extra probability of there be
 ![Battleship Hit](/assets/images/algorithms/battleship-hit.png)
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a13_design_scalability)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a13_design_scalability)
 - [Battleship Game](http://www.datagenetics.com/blog/december32011/)
 - [Battleship Probability Calculator](https://cliambrown.com/battleship/)
 - [The Linear Theory of Battleship](http://thevirtuosi.blogspot.com/2011/10/linear-theory-of-battleship.html)

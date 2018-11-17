@@ -1188,5 +1188,5 @@ public class Java8Refactor {
 - \<Reason\> \<stack trace\> (Native method): This means that a native method was not allocated the required memory.
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a014_java_world_topics)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a014_java_world_topics)
 - [Java Garbage Collection Basics](http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html)

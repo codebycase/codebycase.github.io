@@ -756,4 +756,4 @@ public int pivotIndex(int[] nums) {
 
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a19-tricky-java-snippets)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a19_tricky_java_snippets)

@@ -3480,4 +3480,4 @@ public int minCost2(int[][] costs) {
 ```
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a08_dynamic_programming)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a08_dynamic_programming)

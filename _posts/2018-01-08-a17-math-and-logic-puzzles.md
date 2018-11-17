@@ -470,4 +470,4 @@ The main idea is the idle elevators should move to a position, automatically, wh
 - **Late afternoon: Many-to-one relationship.** Idle elevators return to floors 5, 7, 9 and 10. Elevators will rarely be idle during peak times, but it should be reinforced that most elevator use will be taking people down rather than up. Therefore, moving the idle elevators up to higher floors makes them better positioned to carry people down to the first floor. It can also be assumed that the lowest floors use the stairs at the end of the day already because their position nearest the first floor will always result in an already full elevator being delivered to them when pressing the "call" button.
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a17_math_logic_puzzle)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a17_math_logic_puzzle)

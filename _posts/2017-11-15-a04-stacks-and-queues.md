@@ -1042,4 +1042,4 @@ public int leastInterval2(char[] tasks, int n) {
 ```
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a04_stacks_queues)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a04_stacks_queues)

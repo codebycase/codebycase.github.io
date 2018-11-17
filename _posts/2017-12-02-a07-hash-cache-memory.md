@@ -959,4 +959,4 @@ public class LFUCache {
 ```
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a07_hash_cache_memory)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a07_hash_cache_memory)

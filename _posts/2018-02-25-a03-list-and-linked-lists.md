@@ -792,4 +792,4 @@ public List<String> letterCombinations(String digits) {
 ```
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a03_linked_lists)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a03_linked_lists)

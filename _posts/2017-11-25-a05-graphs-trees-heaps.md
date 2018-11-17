@@ -4889,5 +4889,5 @@ public class RangeSumQuery {
 
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/blob/master/src/main/java/a05_graphs_trees_heaps)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a05_graphs_trees_heaps)
 - [Algorithms, 4th Edition: 2.4 Priority Queues](https://algs4.cs.princeton.edu/24pq/)
