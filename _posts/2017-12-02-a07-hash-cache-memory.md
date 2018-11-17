@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Hash/Cache and Memory
 key: a07-hash-cache-memory
 categories: Algorithms
-tags: Hash Cache Memory
+tags: Hash Cache
 ---
 
 ## Hash Tables

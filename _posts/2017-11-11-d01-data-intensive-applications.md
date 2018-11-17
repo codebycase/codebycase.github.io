@@ -3,7 +3,7 @@ layout: article
 title: Designs - Data-Intensive Applications
 key: d01-data-intensive-applications
 categories: Designs
-tags: Data-Intensive
+tags: Database BigData
 ---
 
 

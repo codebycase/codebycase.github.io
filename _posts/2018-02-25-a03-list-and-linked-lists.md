@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - List & Linked Lists
 key: a03-list-linked-lists
 categories: Algorithms
-tags: List Linked List
+tags: List
 ---
 
 # List

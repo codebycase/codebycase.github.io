@@ -3,7 +3,7 @@ layout: article
 title: Algorithms - Object-Oriented Design
 key: a12-object-oriented-design
 categories: Algorithms
-tags: OO-Design
+tags: Design
 ---
 
 # Object-Oriented Design

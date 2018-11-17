@@ -8,6 +8,8 @@ tags: Parallelism Concurrency
 
 ## Parallel Computing
 
+Concurrency is when two or more tasks can start, run, and complete in overlapping time periods. Parallelism is when tasks literally run at the same time, eg. on a multi-core processor.
+
 Parallel computation has become increasingly common. Laptops and desktops come with multiple processors which communicate through shared memory (shared memory model). High-end computation is often done using clusters consisting of individual computers communicating through a network (distributed memory model).
 
 Parallelism provides a number of benefits: high performance, better use of resources, fairness, convenience, fault tolerance.
@@ -32,6 +34,8 @@ If a method modifies a static field and there is any possibility that the method
 Since Java 5, the platform has provided higher-level concurrency utilities that do the sorts of things you formerly had to had-code atop wait and notify. The utilities fall into three categories: Executor Framework; Concurrent Collections (especially BlockingQueue); Synchronizers (Semaphore, CountDownLatch, CyclicBarrier and Exchanger).
 
 For interval timing, always use System.nanoTime rather than System.currentTimeMillis as System.nanoTime is both more accurate and more precise and is unaffected by adjustments to the system's real-time click.
+
+
 
 ### ConcurrentHashMap
 

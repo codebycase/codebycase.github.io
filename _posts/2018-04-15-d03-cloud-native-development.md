@@ -3,7 +3,7 @@ layout: article
 title: Designs - Cloud Native Development
 key: d03-cloud-native-development
 categories: Designs
-tags: Cloud-Native
+tags: Cloud
 ---
 
 ## Understanding Cloud Native Concepts
