@@ -2,8 +2,14 @@
 layout: article
 title: Algorithms - Graphs, Trees and Heaps
 key: a05-graphs-trees-heaps
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: Graph Tree Heap
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 # Graphs & Trees & Heaps

@@ -2,8 +2,14 @@
 layout: article
 title: Algorithms - Parallel Computing
 key: a11-parallel-computing
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: Parallelism Concurrency
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 ## Parallel Computing

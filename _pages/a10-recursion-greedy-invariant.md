@@ -2,8 +2,14 @@
 layout: article
 title: Algorithms - Recursion, Greedy, Invariant
 key: a10-recursion-greedy-invariant
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: Recursion Greedy Invariants
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 ## Recursion

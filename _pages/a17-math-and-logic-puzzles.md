@@ -2,8 +2,14 @@
 layout: article
 title: Algorithms - Math and Logic Puzzles
 key: a17-math-and-logic-puzzles
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: Math Puzzle Probability
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 ## Prime Numbers

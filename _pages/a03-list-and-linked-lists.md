@@ -2,8 +2,14 @@
 layout: article
 title: Algorithms - List & Linked Lists
 key: a03-list-linked-lists
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: List
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 # List

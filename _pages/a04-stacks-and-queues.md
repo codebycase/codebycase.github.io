@@ -2,8 +2,14 @@
 layout: article
 title: Algorithms - Stacks and Queues
 key: a04-stacks-and-queues
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: Stack Queue
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 # Stacks & Queues

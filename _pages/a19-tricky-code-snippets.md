@@ -1,12 +1,20 @@
 ---
 layout: article
 title: Algorithms - Tricky Java Snippets
-key: a19-tricky-java-snippets
+key: a19-tricky-code-snippets
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: Java
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 Collect a list of java code snippets those are tricky and brilliant.
+
+<!-- more -->
 
 ### Split a paragraph to words
 

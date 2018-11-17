@@ -2,8 +2,14 @@
 layout: article
 title: Algorithms - The Honors Question
 key: a18-the-honors-question
+cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
 tags: Honors
+sharing: true
+aside:
+  toc: true
+show_edit_on_github: true
+pageview: true
 ---
 
 ## Honors Questions
