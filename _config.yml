@@ -177,6 +177,12 @@ exclude:
   - /test
   - /vendor
 
+collections:
+  pages:
+    output: true
+  articles:
+    output: true
+    
 defaults:
   - scope:
       path: ""
