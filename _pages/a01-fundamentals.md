@@ -1529,5 +1529,5 @@ int[][] dirs = { { 0, 1 }, { 1, 0 }, { -1, 0 }, { 0, -1 } };
 ```
 
 # Reference Resources
-- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a01-fundamentals)
+- [Source Code on GitHub](https://github.com/codebycase/algorithms-java/tree/master/src/main/java/a01_fundamentals)
 - [Character encodings: Essential concepts](https://www.w3.org/International/articles/definitions-characters/)
