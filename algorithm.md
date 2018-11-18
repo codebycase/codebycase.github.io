@@ -1,6 +1,6 @@
 ---
 layout: articles
-title: Coding Interview Guide
+title: Coding Interview Accelerator
 key: articles-algorithms
 cover: /assets/images/algorithms/algorithm-overall.jpg
 categories: Algorithms
@@ -15,9 +15,7 @@ articles:
 
 <div class="article__content" markdown="1">
 
----
-
-### Conclude and sum up various programming questions & solutions. Let's brush up ourselves in a fun and efficient way!
+### Conclude and sum up various coding/programming questions & solutions. A central place to brush up ourselves in a thorough and efficient way!
 
 <!--more-->
 
