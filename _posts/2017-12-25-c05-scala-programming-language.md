@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Scala Programming Language
+title: Coding - Scala Programming Language
 key: c05-scala-programming-language
-categories: Collections
+categories: Coding
 tags: Scala
 ---
 

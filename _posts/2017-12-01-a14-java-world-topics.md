@@ -1,8 +1,8 @@
 ---
 layout: article
-title: Algorithms - Java World Topics
+title: Coding - Java World Topics
 key: a14-java-world-topics
-categories: Algorithms
+categories: Coding
 tags: Java
 ---
 
