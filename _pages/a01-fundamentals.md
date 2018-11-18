@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Fundamentals
 key: page-a01-fundamentals
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Primitive Bit Charset
 sharing: true

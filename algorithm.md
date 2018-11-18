@@ -2,7 +2,7 @@
 layout: articles
 title: Coding Interview Accelerator
 key: articles-algorithms
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Algorithm
 articles:
@@ -10,7 +10,7 @@ articles:
   show_excerpt: true
   show_readmore: true
   show_cover: true
-  show_info: false
+  show_info: true
 ---
 
 <div class="article__content" markdown="1">

@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Sorting and Searching
 key: a06-sorting-and-searching
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Sorting Searching
 sharing: true

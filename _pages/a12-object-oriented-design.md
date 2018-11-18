@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Object-Oriented Design
 key: a12-object-oriented-design
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Design
 sharing: true

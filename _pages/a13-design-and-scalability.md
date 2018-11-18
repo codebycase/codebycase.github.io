@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Design and Scalability
 key: a13-design-and-scalability
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Design Scalability
 sharing: true

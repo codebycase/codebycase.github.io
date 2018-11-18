@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - List & Linked Lists
 key: a03-list-linked-lists
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: List
 sharing: true

@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Tricky Java Snippets
 key: a19-tricky-code-snippets
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Java
 sharing: true

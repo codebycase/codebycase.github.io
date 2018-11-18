@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Arrays and Strings
 key: a02-arrays-and-strings
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Array String
 sharing: true

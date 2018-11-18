@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Math and Logic Puzzles
 key: a17-math-and-logic-puzzles
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Math Puzzle Probability
 sharing: true

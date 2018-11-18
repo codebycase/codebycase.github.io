@@ -2,7 +2,7 @@
 layout: article
 title: Algorithms - Dynamic Programming
 key: a08-dynamic-programming
-cover: /assets/images/algorithms/algorithm-overall.jpg
+cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Dynamic Backtrack
 sharing: true
