@@ -1,5 +1,5 @@
 ---
-layout: articles
+layout: articles2
 title: Coding Interview Accelerator
 key: articles-algorithms
 cover: /assets/images/articles/computer-science.png
@@ -14,6 +14,8 @@ articles:
 ---
 
 <div class="article__content" markdown="1">
+
+---
 
 ### Conclude and sum up various coding/programming questions & solutions. A central place to brush up ourselves in a thorough and efficient way!
 
