@@ -2,11 +2,11 @@
 layout: article
 title: Book - Coding Interview Accelerator
 key: a100-coding-interview-accelerator
-categories: Algorithms
+categories: Books
 tags: Book
 aside:
   toc: false
 ---
 
-### Hope it helps you as well: [Coding Interview Accelerator](/algorithm.html) :smile:
+### Hope my online book helps you as well: [Coding Interview Accelerator](/algorithm.html) :smile:
 

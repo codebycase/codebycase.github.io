@@ -6,7 +6,7 @@ cover: /assets/images/articles/computer-science.png
 categories: Algorithms
 tags: Algorithm
 articles:
-  data_source: site.pages
+  data_source: site.algorithms
   show_excerpt: true
   show_readmore: true
   show_cover: true

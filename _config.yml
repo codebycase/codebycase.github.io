@@ -182,6 +182,9 @@ collections:
     output: true
   articles:
     output: true
+  algorithms:
+    output: true
+
     
 defaults:
   - scope:
