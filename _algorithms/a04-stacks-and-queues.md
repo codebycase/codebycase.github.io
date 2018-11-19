@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - Stacks and Queues
+title: Algorithms 4 - Stacks and Queues
 key: a04-stacks-and-queues
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
 tags: Stack Queue
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 # Stacks & Queues

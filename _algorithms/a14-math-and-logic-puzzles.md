@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - Math and Logic Puzzles
-key: a17-math-and-logic-puzzles
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
+title: Algorithms 14 - Math and Logic Puzzles
+key: a14-math-and-logic-puzzles
 tags: Math Puzzle Probability
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 ## Prime Numbers

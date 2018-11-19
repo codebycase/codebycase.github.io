@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - SQL and Databases
-key: a15-sql-and-databases
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
+title: Algorithms 13 - SQL and Databases
+key: a13-sql-and-databases
 tags: SQL Database
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 ## Database Topics

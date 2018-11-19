@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - The Honors Question
-key: a18-the-honors-question
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
+title: Algorithms 15 - The Honors Questions
+key: a15-the-honors-questions
 tags: Honors
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 ## Honors Questions

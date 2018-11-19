@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - Object-Oriented Design
-key: a12-object-oriented-design
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
+title: Algorithms 11 - Object-Oriented Design
+key: a11-object-oriented-design
 tags: Design
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 # Object-Oriented Design

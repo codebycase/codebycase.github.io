@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - Hash/Cache and Memory
+title: Algorithms 7 - Hash/Cache and Memory
 key: a07-hash-cache-memory
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
 tags: Hash Cache
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 ## Hash Tables

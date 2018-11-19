@@ -17,7 +17,7 @@ articles:
 
 ---
 
-### Conclude and sum up various coding/programming questions & solutions. A central place to brush up ourselves in a thorough and efficient way!
+### Conclude and sum up various algorithm questions & solutions. A central place to brush up ourselves in a thorough and efficient way!
 
 <!--more-->
 

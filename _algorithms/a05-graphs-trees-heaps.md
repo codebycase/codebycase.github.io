@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - Graphs, Trees and Heaps
+title: Algorithms 5 - Graphs, Trees and Heaps
 key: a05-graphs-trees-heaps
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
 tags: Graph Tree Heap
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 # Graphs & Trees & Heaps

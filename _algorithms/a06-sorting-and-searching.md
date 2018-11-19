@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - Sorting and Searching
+title: Algorithms 6 - Sorting and Searching
 key: a06-sorting-and-searching
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
 tags: Sorting Searching
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 # Sorting

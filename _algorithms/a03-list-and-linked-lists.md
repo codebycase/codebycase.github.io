@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - List & Linked Lists
+title: Algorithms 3 - List & Linked Lists
 key: a03-list-linked-lists
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
 tags: List
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 # List

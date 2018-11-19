@@ -4,9 +4,9 @@ header:
       zh:       编程
     url:        /coding.html
   - titles:
-      en:       Algorithm
+      en:       Algorithms
       zh:       算法
-    url:        /algorithm.html
+    url:        /algorithms.html
   - titles:
       en:       BigData
       zh:       大数据

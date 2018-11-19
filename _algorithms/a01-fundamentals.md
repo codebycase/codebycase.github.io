@@ -1,15 +1,7 @@
 ---
-layout: article
-title: Algorithms - Fundamentals
+title: Algorithms 1 - Fundamentals
 key: page-a01-fundamentals
-cover: /assets/images/articles/computer-science.png
-categories: Algorithms
 tags: Primitive Bit Charset
-sharing: true
-aside:
-  toc: true
-show_edit_on_github: true
-pageview: true
 ---
 
 # Fundamentals
