@@ -180,11 +180,13 @@ exclude:
 collections:
   pages:
     output: true
-  articles:
-    output: true
   programs:
     output: true            
   algorithms:
+    output: true
+  bigdata:
+    output: true
+  architect:
     output: true
     
 defaults:
@@ -230,7 +232,30 @@ defaults:
       show_edit_on_github: true
       show_date: false
       pageview: true      
-      
+  - scope:
+      path: "_bigdata"
+    values:
+      layout: article
+      cover: /assets/images/bigdata/bigdata-logo-1.png
+      categories: BigData
+      sharing: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+      pageview: true 
+  - scope:
+      path: "_architect"
+    values:
+      layout: article
+      cover: /assets/images/architect/architect-logo-1.png
+      categories: Architect
+      sharing: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+      pageview: true                  
       
 ## => Plugins
 ##############################
