@@ -1,8 +1,8 @@
 header:
   - titles:
-      en:       Coding
+      en:       Programs
       zh:       编程
-    url:        /coding.html
+    url:        /programs/java-language
   - titles:
       en:       Algorithms
       zh:       算法
@@ -27,3 +27,25 @@ header:
 #      zh-Hans:  关于
 #      zh-Hant:  關於
 #    url:        /about.html
+
+
+programs:
+  - title:      Java
+    children:
+      - title:  Java Language
+        url:    /programs/java-language
+      - title:  Java 8 Features
+        url:    /programs/java-8-features
+      - title:  Java Project
+        url:    /programs/java-project
+      - title:  Java Web App
+        url:    /programs/java-web-app        
+  - title:      Scala
+    children:
+      - title:  Scala Tutorial
+        url:    /programs/scala-language
+  - title:      Dev Env
+    children:
+      - title:  Operation Systems
+        url:    /programs/operation-systems
+

@@ -182,9 +182,10 @@ collections:
     output: true
   articles:
     output: true
+  programs:
+    output: true            
   algorithms:
     output: true
-
     
 defaults:
   - scope:
@@ -204,6 +205,20 @@ defaults:
     values:
       show_date: false      
   - scope:
+      path: "_programs"
+    values:
+      layout: article
+      categories: Programs      
+      sidebar:
+        nav: programs
+      license: false
+      sharing: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: true
+      pageview: true  
+  - scope:
       path: "_algorithms"
     values:
       layout: article
@@ -215,7 +230,8 @@ defaults:
       show_edit_on_github: true
       show_date: false
       pageview: true      
-
+      
+      
 ## => Plugins
 ##############################
 plugins:
