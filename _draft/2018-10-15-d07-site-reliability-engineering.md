@@ -20,7 +20,9 @@ Extreme reliability comes at a cost: maximizing stability limits how fast new fe
 
 - Linear and modular scalability.
 - Strictly consistent reads and writes.
+
   HBase is not an "eventually consistent" DataStore. This makes it very suitable for tasks such as high-speed counter aggregation.
+  
 - Automatic and configurable sharding of tables
   HBase tables are distributed on the cluster via regions, and regions are automatically split and re-distributed as your data grows.
 - Automatic failover support between RegionServers.
