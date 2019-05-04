@@ -8,5 +8,5 @@ aside:
   toc: false
 ---
 
-### Hope my online book helps you as well: [Coding Interview Accelerator](/algorithms.html) :smile:
+## Hope my online book helps you as well: [Coding Interview Accelerator](/algorithms.html)
 
