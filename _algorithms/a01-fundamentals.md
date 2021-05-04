@@ -73,8 +73,8 @@ Primitive types are the most basic data types within the Java language. There ar
 
 ## Objects Memory
 
-- To determine the memory usage of an object, we add the amount of memory used by each instance variable to the overhead associated with each object, typically 16. The overhead includes a references to the object's class, garbage collection information, and synchronization information.
-- More over, the memory usage is typically padded to be a multiple of 8 bytes (on a 64-bit machine). For example, an Integer object uses 24 bytes (16 bytes of overhead, 4 bytes for its int value, and 4 bytes of padding); an int variable uses 8 bytes.
+- To determine the memory usage of an object, we add the amount of memory used by each instance variable to the overhead associated with each object, typically 16. The overhead includes a reference to the object's class, garbage collection information, and synchronization information.
+- Moreover, the memory usage is typically padded to be a multiple of 8 bytes (on a 64-bit machine). For example, an Integer object uses 24 bytes (16 bytes of overhead, 4 bytes for its int value, and 4 bytes of padding); an int variable uses 8 bytes.
 - A Counter object uses 32 bytes: 16 bytes of **overhead**, 8 bytes for its String **reference**, 4 bytes for its int **value**, and 4 bytes of **padding** (This can waste some memory but it speeds up memory access and garbage collection).
 
 ```java

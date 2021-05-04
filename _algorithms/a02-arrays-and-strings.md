@@ -2025,7 +2025,7 @@ A useful to describe this process is in terms of a deterministic finite-state au
 
 Key differences from brute-force implementation:
 
-- Need to precompute dfa[][] from pattern.
+- Need to precompute `dfa[][]` from pattern.
 - Text pointer i never decrements.
 - Could use input stream.
 
@@ -2380,7 +2380,7 @@ public class RabinKarp {
 ## Regular Expressions
 
 email address     [a-z]+@([a-z]+\.)+(edu|com)     rs@cs.princeton.edu
-java identifier   [$_A-Za-z][$_A-Za-z0-9]*        testUser
+java identifier   `[$_A-Za-z][$_A-Za-z0-9]*`       testUser
 
 Nondeterministic finite-state automata (NFA) can "guess" the right one when faced with more than one way to try to match the pattern. NFA is an abstract machine equivalent in power to RE. It supports the following operations: concatenation, closure, binary or, and parentheses...
 
